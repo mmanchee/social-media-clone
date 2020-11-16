@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import NavBar from "./NavBar";
+import Body from "./Body";
+
 
 function App() {
   return (
     <React.Fragment>
-    <NavBar />
-
+      <NavBar />
+      <Body />
     </React.Fragment>
   );
 }
