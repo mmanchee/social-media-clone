@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NavBar() {
+function NavBar(props) {
   return (
     <React.Fragment>
       {/* Navigation Element */}
