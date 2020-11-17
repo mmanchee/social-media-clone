@@ -15,7 +15,7 @@ function Body() {
             <Profile 
               name="Mike"
               img="https://img.pngio.com/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png" />
-            <ProfileDescription class="description"
+            <ProfileDescription 
               description="Hello, my name is Mike."/>
           </td>
           <td id="column-2">
