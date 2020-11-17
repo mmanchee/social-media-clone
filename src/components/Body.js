@@ -9,13 +9,23 @@ function Body() {
   return (
     <React.Fragment>
       <hr />
-      <Profile
-        name="Mike"
-        img="https://img.pngio.com/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png" />
-      <ProfileDescription 
-        description="Hello, my name is Mike."/>
-      <NewsFeed />
-      <FriendRequestList />
+      <table>
+        <tr>
+          <td id="column-1">
+            <Profile 
+              name="Mike"
+              img="https://img.pngio.com/profile-icon-png-image-free-download-searchpngcom-profile-icon-png-673_673.png" />
+            <ProfileDescription class="description"
+              description="Hello, my name is Mike."/>
+          </td>
+          <td id="column-2">
+            <NewsFeed />
+          </td>
+          <td id="column-3">
+            <FriendRequestList />
+          </td>
+        </tr>
+      </table>
     </React.Fragment>
   )
 }

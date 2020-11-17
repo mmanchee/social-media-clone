@@ -23,15 +23,18 @@ const FriendRequests = [
 function FriendRequestList(){
   return (
     <React.Fragment>
-      <h3>Friend Requests</h3>
-      <hr />
-      {FriendRequests.map((request, index) =>
-        <FriendRequest
-          name={request.name}
-          img={request.img}
-          key={index}
-        />
-      )}
+      <div class="friend-request">
+        <div class="inner">
+          <h3>Friend Requests</h3>
+          <hr />
+          {FriendRequests.map((request, index) =>
+            <FriendRequest
+              name={request.name}
+              img={request.img}
+              key={index} />
+          )}
+        </div>
+      </div>
     </React.Fragment>
   )
 }

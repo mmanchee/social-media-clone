@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 function FriendRequest(props){
   return (
     <React.Fragment>
-      <img src={props.img} />
-      <h6>{props.name}</h6>
-      <button>Accept</button>
+      <div>
+        <img src={props.img} class = "users-img" />
+        <h6>{props.name}</h6>
+        <button>Accept</button>
+      </div>
     </React.Fragment>
   )
 }

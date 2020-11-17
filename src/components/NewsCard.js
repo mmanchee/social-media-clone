@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function NewsCard(props) {
   return (
     <React.Fragment>
-      <img src={props.img} />
+      <img src={props.img} class = "users-img"/>
       <h3>{props.user}</h3>
       <p>{props.message}</p>
       <hr />

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function ProfileDescription(props) {
   return (
-    <p>{props.description}</p>
+    <p id="description">{props.description}</p>
   )
 }
 

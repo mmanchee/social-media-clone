@@ -6,8 +6,11 @@ import Body from "./Body";
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
-      <Body />
+      <div class="screen">
+        <NavBar />
+        <Body />
+      </div>
+      
     </React.Fragment>
   );
 }

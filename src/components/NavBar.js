@@ -3,18 +3,21 @@ import React from 'react';
 function NavBar(props) {
   return (
     <React.Fragment>
-      {/* Navigation Element */}
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Notifications</a></li>
-        <li><a href="">Messages</a></li>
-      </ul>
-      {/* Search Bar */}
-      <form>
-        <input type="text" placeholder="Search"></input>
-      </form>
-      {/* Tweet */}
-      <button>Tweet</button>
+      <div class="nav-container">
+        {/* Navigation Element */}
+        <div id="nav-navbar">
+          <a class="nav-navitem" href="">Home</a>
+          <a class="nav-navitem" href="">Notifications</a>
+          <a class="nav-navitem" href="">Messages</a>
+        </div>
+        <div id="nav-space"></div>
+        {/* Search Bar */}
+        <form id="nav-search">
+          <input id="nav-input" type="text" placeholder="Search"></input>
+        </form>
+        {/* Tweet */}
+        <button id="nav-tweet">Tweet</button>
+      </div>
     </React.Fragment>
   )
 }

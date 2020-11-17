@@ -22,13 +22,24 @@ const newsFeedList = [
 function NewsFeed() {
   return (
     <React.Fragment>
-      <hr />
-      {newsFeedList.map((newsCard, index) =>
-        <NewsCard img={newsCard.img}
-          user={newsCard.user}
-          message={newsCard.message}
-          key={index}/>
-        )}
+      <div class="news-feed">
+        <div class="inner">
+          <h3>News Feed</h3>
+          <div>
+            <div id="search-div">
+              <input id="search-bar" type="text" />
+              <button>Search</button>
+            </div>
+          </div>
+          <hr />
+          {newsFeedList.map((newsCard, index) =>
+            <NewsCard img={newsCard.img}
+              user={newsCard.user}
+              message={newsCard.message}
+              key={index}/>
+            )}
+        </div>
+      </div>
     </React.Fragment>
   );
 }

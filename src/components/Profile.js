@@ -4,11 +4,19 @@ import PropTypes from "prop-types";
 function Profile(props) {
   return (
     <React.Fragment>
-      <img src={props.img}/>
-      <h3>{props.name}</h3>
-      <a href="" >Tweets</a>
-      <a href="" >Following</a>
-      <a href="" >Followers</a>
+      <div class="profile">
+        <div id="profile-top">
+          <img src={props.img} class ="profile-img"/>
+        </div>
+        <div id="profile-bottom">
+          <h3 id="profile-name">{props.name}</h3>
+          <div id="profile-nav">
+            <a href="" >TWEETS</a>
+            <a href="" >FOLLOWING</a>
+            <a href="" >FOLLOWERS</a>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 }
